@@ -6,3 +6,8 @@
 	new_spawn.AddComponent(/datum/component/codeword_hearing, GLOB.syndicate_code_response_regex, "orange")
 	new_spawn.add_mob_memory(/datum/memory/key/codewords)
 	new_spawn.add_mob_memory(/datum/memory/key/codewords/responses)
+
+/obj/effect/mob_spawn/ghost_role/human/lavaland_syndicate/create(mob/mob_possessor, newname)
+	var/mob/living/spawned_mob = ..()
+	spawned_mob?.get_idcard(hand_first = FALSE)?.add_access(list(ACCESS_SYNDICATE_FACILITY), mode = FORCE_ADD_ALL)
+	return spawned_mob

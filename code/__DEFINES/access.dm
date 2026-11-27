@@ -202,6 +202,7 @@
 /// SYNDICATE
 #define ACCESS_SYNDICATE "syndicate"
 #define ACCESS_SYNDICATE_LEADER "syndicate_leader"
+#define ACCESS_SYNDICATE_FACILITY "syndicate_facility"
 /// BLOODCULT
 	//Special, for anything that's basically internal
 #define ACCESS_BLOODCULT "bloodcult"
@@ -412,6 +413,7 @@
 	ACCESS_AWAY_MAINTENANCE, \
 	ACCESS_AWAY_MEDICAL, \
 	ACCESS_AWAY_SEC, \
+	ACCESS_SYNDICATE_FACILITY, \
 )
 
 /// Weird internal Cult access that prevents non-cult from using their doors.  Do not use direct, access via SSid_access.get_flag_access_list(ACCESS_FLAG_SPECIAL)
@@ -572,6 +574,9 @@
 	ACCESS_ENGINE_EQUIP, \
 )
 /// END OF ADDITION
+
+#define REGION_SYNDICATE "Syndicate"
+#define REGION_ACCESS_SYNDICATE list(ACCESS_SYNDICATE_FACILITY)
 
 /**
  * A list of PDA paths that can be painted as well as the regional heads which should be able to paint them.

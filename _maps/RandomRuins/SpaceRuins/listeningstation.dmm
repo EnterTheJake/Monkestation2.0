@@ -1418,7 +1418,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/machinery/turretid{
-	req_access = list("syndicate");
+	req_access = list("syndicate_facility");
 	pixel_x = 31;
 	pixel_y = -24;
 	control_area = "/area/ruin/space/has_grav/listeningstation/asteroid";

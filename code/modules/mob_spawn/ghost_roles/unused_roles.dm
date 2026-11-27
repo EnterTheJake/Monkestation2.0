@@ -278,6 +278,11 @@
 	if(policy)
 		to_chat(new_spawn, span_bold("[policy]"))
 
+/obj/effect/mob_spawn/ghost_role/human/syndicatespace/create(mob/mob_possessor, newname)
+	var/mob/living/spawned_mob = ..()
+	spawned_mob?.get_idcard(hand_first = FALSE)?.add_access(list(ACCESS_SYNDICATE_FACILITY), mode = FORCE_ADD_ALL)
+	return spawned_mob
+
 /obj/effect/mob_spawn/ghost_role/human/syndicatespace/captain
 	name = "Syndicate Ship Captain"
 	prompt_name = "a cybersun captain"

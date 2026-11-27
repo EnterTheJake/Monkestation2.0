@@ -121,6 +121,7 @@ SUBSYSTEM_DEF(id_access)
 	accesses_by_region[REGION_COMMAND] = REGION_ACCESS_COMMAND
 	accesses_by_region[REGION_CENTCOM] = REGION_ACCESS_CENTCOM
 	accesses_by_region[REGION_CHARLIE_STATION] = REGION_ACCESS_CHARLIE_STATION //MONKESTATION ADDITION - Used for Charlie Station ID console.
+	accesses_by_region[REGION_SYNDICATE] = REGION_ACCESS_SYNDICATE
 
 	station_regions = REGION_AREA_STATION
 
@@ -348,6 +349,7 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_AWAY_SEC]"] = "Charlie Station Security"
 	desc_by_access["[ACCESS_AWAY_ENGINEERING]"] = "Beta Station Engineering"
 	//END OF ADDITION
+	desc_by_access["[ACCESS_SYNDICATE_FACILITY]"] = "Syndicate Facility"
 
 /**
  * Returns the access bitflags associated with any given access level.

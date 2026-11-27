@@ -108,6 +108,12 @@
 	desc = "A ballistic machine-gun auto-turret. This one has had one of its barrels replaced with a taser."
 	stun_projectile = /obj/projectile/energy/electrode
 	stun_projectile_sound = 'sound/items/weapons/taser.ogg'
+	req_access = list(ACCESS_SYNDICATE_FACILITY)
+
+/obj/machinery/porta_turret/syndicate/depot/assess_perp(mob/living/carbon/human/perp)
+	if(check_access_list(perp.get_access()))
+		return 0
+	return THREAT_ASSESS_MAXIMUM
 
 //shipbreaking features
 /obj/machinery/computer/shipbreaker/syndicate_depot

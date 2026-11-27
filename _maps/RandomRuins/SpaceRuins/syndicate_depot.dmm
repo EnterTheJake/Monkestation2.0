@@ -1817,7 +1817,7 @@
 "sF" = (
 /obj/structure/cable,
 /obj/machinery/turretid{
-	req_access = list("syndicate");
+	req_access = list("syndicate_facility");
 	pixel_x = 0;
 	pixel_y = 35;
 	control_area = "/area/ruin/space/has_grav/syndicate_depot";

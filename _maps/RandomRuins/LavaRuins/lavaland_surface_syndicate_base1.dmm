@@ -1197,7 +1197,7 @@
 	lethal = 1;
 	name = "Base turret controls";
 	pixel_y = 30;
-	req_access = list("syndicate")
+	req_access = list("syndicate_facility")
 	},
 /turf/open/floor/circuit/red,
 /area/ruin/syndicate_lava_base/main)

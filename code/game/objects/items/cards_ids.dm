@@ -1650,6 +1650,7 @@
 		var/list/tgui_region_data = SSid_access.all_region_access_tgui
 		for(var/region in SSid_access.station_regions)
 			regions += tgui_region_data[region]
+		regions += tgui_region_data[REGION_SYNDICATE]
 
 	data["accesses"] = regions
 	data["ourAccess"] = access

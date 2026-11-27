@@ -53,3 +53,4 @@
 	assignment = "Syndicate Contractor"
 	trim_state = "trim_contractor"
 	sechud_icon_state = SECHUD_CONTRACTOR
+	access = list(ACCESS_SYNDICATE, ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE_FACILITY)
