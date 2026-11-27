@@ -12,6 +12,7 @@
 
 /datum/outfit/syndicate_empty/depot
 	name = "Syndicate Depot Technician"
+	id_trim = /datum/id_trim/chameleon/operative/facility
 	suit = /obj/item/clothing/suit/hazardvest
 	back = /obj/item/storage/backpack
 	head = /obj/item/clothing/head/utility/hardhat
@@ -46,7 +47,7 @@
 
 /datum/outfit/syndicate_empty/depot/quartermaster
 	name = "Syndicate Depot Quartermaster"
-	id_trim = /datum/id_trim/chameleon/operative/nuke_leader //extra access, including opening EVA storage
+	id_trim = /datum/id_trim/chameleon/operative/facility/leader //extra access, including opening EVA storage
 	uniform = /obj/item/clothing/under/syndicate/sniper
 	ears = /obj/item/radio/headset/syndicate/alt/leader
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/syndicate

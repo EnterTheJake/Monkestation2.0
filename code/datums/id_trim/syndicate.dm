@@ -10,7 +10,7 @@
 /// Trim for Syndicate mobs, outfits and corpses.
 /datum/id_trim/syndicom/crew
 	assignment = "Syndicate Operative"
-	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS)
+	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS, ACCESS_SYNDICATE_FACILITY)
 
 /// Interdyne medical Staff
 /datum/id_trim/syndicom/Interdyne/pharmacist
@@ -46,7 +46,7 @@
 /datum/id_trim/syndicom/captain
 	assignment = "Syndicate Ship Captain"
 	trim_state = "trim_captain"
-	access = list(ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER, ACCESS_ROBOTICS)
+	access = list(ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER, ACCESS_ROBOTICS, ACCESS_SYNDICATE_FACILITY)
 
 /// Trim for Syndicate mobs, outfits and corpses.
 /datum/id_trim/battlecruiser
@@ -76,6 +76,15 @@
 /datum/id_trim/chameleon/operative/nuke_leader
 	assignment = "Syndicate Operative Leader"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER)
+
+/// Trim for Syndicate ghost roles that staff a Syndicate facility.
+/datum/id_trim/chameleon/operative/facility
+	access = list(ACCESS_SYNDICATE, ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE_FACILITY)
+
+/// Trim for the Syndicate ghost role in charge of a Syndicate facility.
+/datum/id_trim/chameleon/operative/facility/leader
+	assignment = "Syndicate Operative Leader"
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_SYNDICATE, ACCESS_SYNDICATE_LEADER, ACCESS_SYNDICATE_FACILITY)
 
 /// Trim for Chameleon ID cards. Many outfits, nuke ops and some corpses hold Chameleon ID cards.
 /datum/id_trim/chameleon/operative/clown

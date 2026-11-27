@@ -35,6 +35,7 @@
 	WILDCARD_NAME_CAPTAIN = list(limit = -1, usage = list()), \
 	WILDCARD_NAME_AWAY = list(limit = -1, usage = list()) \
 )
+/// Wildcard slot define for the detective's Undercover ID. Can hold infinite common and command accesses and 5 captain accesses.
 #define WILDCARD_LIMIT_UNDERCOVER list( \
 	WILDCARD_NAME_COMMON = list(limit = -1, usage = list()), \
 	WILDCARD_NAME_COMMAND = list(limit = -1, usage = list()), \
