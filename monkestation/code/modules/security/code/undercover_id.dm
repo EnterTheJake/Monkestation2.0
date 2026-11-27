@@ -4,7 +4,7 @@
 	name = "Undercover I.D"
 	desc = "Nanotrasen finest detective's wet dream, an undercover I.D."
 	trim = /datum/id_trim/undercover
-	wildcard_slots = WILDCARD_LIMIT_CHAMELEON
+	wildcard_slots = WILDCARD_LIMIT_UNDERCOVER
 
 	/// Have we set a custom name and job assignment, or will we use what we're given when we chameleon change?
 	var/forged = FALSE
